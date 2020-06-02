@@ -18,6 +18,12 @@
 			"style": {
 				"navigationBarTitleText": "C"
 			}
+		},
+		{
+			"path": "pages/D",
+			"style": {
+				"navigationBarTitleText": "D"
+			}
 		}
 	],
 	"globalStyle": {

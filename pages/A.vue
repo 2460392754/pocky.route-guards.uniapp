@@ -1,18 +1,33 @@
 <template>
 	<view>
-		<button @click="onClickRedirect">to B page</button>
-		<button @click="onclicKRouteGuardRedirect">route guard to C page</button>
+		<button @click="onClickRedirect('switchTab', 'B')">
+			to B page - switchTab
+		</button>
+
+		<button @click="onclicKRouteGuardRedirect">
+			route guard to C page - switchTab
+		</button>
+
+		<button @click="onClickRedirect('navigateTo', 'D')">
+			to D page - navigateTo
+		</button>
+		<button @click="onClickRedirect('redirectTo', 'D')">
+			to D page - redirectTo
+		</button>
+		<button @click="onClickRedirect('reLaunch', 'D')">
+			to D page - reLaunch
+		</button>
 	</view>
 </template>
 
 <script>
 export default {
 	methods: {
-		onClickRedirect() {
+		onClickRedirect(action, path) {
 			console.log("redirect");
 
-			uni.switchTab({
-				url: "/pages/B",
+			uni[action]({
+				url: "/pages/" + path,
 			});
 		},
 

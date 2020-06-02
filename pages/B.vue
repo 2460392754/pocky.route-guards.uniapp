@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<button @click="onClickRedirect">to A page</button>
+		<button @click="onClickRedirect">to A page - switchTab</button>
 	</view>
 </template>
 
