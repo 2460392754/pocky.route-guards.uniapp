@@ -10,7 +10,7 @@ export default {
 		onClickRedirect() {
 			console.log("redirect");
 
-			uni.redirectTo({
+			uni.switchTab({
 				url: "/pages/A",
 			});
 		},

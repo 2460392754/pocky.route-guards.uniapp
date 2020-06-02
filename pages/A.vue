@@ -11,7 +11,7 @@ export default {
 		onClickRedirect() {
 			console.log("redirect");
 
-			uni.redirectTo({
+			uni.switchTab({
 				url: "/pages/B",
 			});
 		},
@@ -19,7 +19,7 @@ export default {
 		onclicKRouteGuardRedirect() {
 			console.log("route guard redirect");
 
-			uni.redirectTo({
+			uni.switchTab({
 				url: "/pages/B?id=1",
 			});
 		},

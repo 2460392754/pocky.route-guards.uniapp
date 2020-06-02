@@ -25,5 +25,25 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/A",
+				"text": "A页面"
+			},
+			{
+				"pagePath": "pages/B",
+				"text": "B页面"
+			},
+			{
+				"pagePath": "pages/C",
+				"text": "C页面"
+			}
+		]
 	}
 }
