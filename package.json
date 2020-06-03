@@ -1,0 +1,29 @@
+{
+    "name": "route-guards",
+    "version": "1.0.0",
+    "description": "在 uniapp 中模拟并实现对应 vue-router 的部分 Api 的功能",
+    "main": "lib/index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/2460392754/pocky.route-guards.uniapp.git"
+    },
+    "keywords": [
+        "uniapp",
+        "uni-app"
+    ],
+    "author": "pocky",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/2460392754/pocky.route-guards.uniapp/issues"
+    },
+    "homepage": "https://github.com/2460392754/pocky.route-guards.uniapp#readme",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    }
+}
