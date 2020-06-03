@@ -1,0 +1,7 @@
+/pages
+/unpackage
+App.vue
+main.js
+manifest.json
+pages.json
+.prettierrc.js
