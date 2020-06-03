@@ -10,14 +10,22 @@
 | --- | --- | ---------- | ------------ | ---------- | ---------- | --------- | ---------- |
 | √   | √   | √          | √            | √          | √          | √         | √          |
 
+## 如何安装
+
+```bash
+npm install uniapp-route-guards --save
+# or
+yarn add uniapp-route-guards
+```
+
 ## 全局前置守卫
 
 ```js
 // main.js
 
-import UniGuard from './lib';
+import UniRouteiGuards from 'uniapp-route-guards';
 
-const guard = new UniGuard();
+const guard = new UniRouteiGuards();
 
 guard.beforeEach((to, from, next) => {
     console.log('========================');
