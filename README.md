@@ -9,25 +9,25 @@
 ```js
 // main.js
 
-import UniGuard from "./lib";
+import UniGuard from './lib';
 
 const guard = new UniGuard();
 
 guard.beforeEach((to, from, next) => {
-	console.log("========================");
-	console.log("guard.beforeEach");
-	console.log("to: ", to);
-	console.log("from: ", from);
+    console.log('========================');
+    console.log('guard.beforeEach');
+    console.log('to: ', to);
+    console.log('from: ', from);
 
-	if (to.url.includes("id=1")) {
-		next({ url: "/pages/C" });
+    if (to.url.includes('id=1')) {
+        next({ url: '/pages/C' });
 
-		// 或者也可以使用一下方法
-		// next(false);
-		// next(new Error("can`t redirect "));
-	} else {
-		next();
-	}
+        // 或者也可以使用一下方法
+        // next(false);
+        // next(new Error("can`t redirect "));
+    } else {
+        next();
+    }
 });
 ```
 
@@ -35,10 +35,10 @@ guard.beforeEach((to, from, next) => {
 
 ```js
 guard.afterEach((to, from) => {
-	console.log("========================");
-	console.log("guard.afterEach");
-	console.log("to: ", to);
-	console.log("from: ", from);
+    console.log('========================');
+    console.log('guard.afterEach');
+    console.log('to: ', to);
+    console.log('from: ', from);
 });
 ```
 
@@ -46,7 +46,7 @@ guard.afterEach((to, from) => {
 
 ```js
 guard.onError((errMsg) => {
-	console.log("my route-guards error: " + errMsg);
+    console.log('my route-guards error: ' + errMsg);
 });
 ```
 
@@ -56,18 +56,18 @@ guard.onError((errMsg) => {
 
 ```js
 // 例如
-uni.navigateTo({ url: "/pages/a" });
-uni.redirectTo({ url: "/pages/a" });
-uni.reLaunch({ url: "/pages/a" });
-uni.switchTab({ url: "/pages/a" });
+uni.navigateTo({ url: '/pages/a' });
+uni.redirectTo({ url: '/pages/a' });
+uni.reLaunch({ url: '/pages/a' });
+uni.switchTab({ url: '/pages/a' });
 uni.navigateBack();
 ```
 
 ## 解析运行流程
 
-- 调用全局的`beforeEach`守卫
-- 路由跳转
-- 调用全局的`afterEach`守卫
+-   调用全局的`beforeEach`守卫
+-   路由跳转
+-   调用全局的`afterEach`守卫
 
 ## 注意
 
@@ -75,9 +75,9 @@ uni.navigateBack();
 
 ```js
 guard.beforeEach((to, from, next) => {
-	next((vm) => {
-		// 通过 `vm` 访问组件实例
-	});
+    next((vm) => {
+        // 通过 `vm` 访问组件实例
+    });
 });
 ```
 
