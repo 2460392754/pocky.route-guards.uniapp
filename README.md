@@ -23,6 +23,10 @@ guard.beforeEach((to, from, next) => {
         next({ url: '/pages/C' });
 
         // 或者也可以使用一下方法
+        // next({
+        //     url: '/pages/D',
+        //     action: 'navigateTo'
+        // });
         // next(false);
         // next(new Error("can`t redirect "));
     } else {
