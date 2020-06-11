@@ -1,55 +1,88 @@
 {
-	"pages": [
-		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/A",
-			"style": {
-				"navigationBarTitleText": "A"
-			}
-		},
-		{
-			"path": "pages/B",
-			"style": {
-				"navigationBarTitleText": "B"
-			}
-		},
-		{
-			"path": "pages/C",
-			"style": {
-				"navigationBarTitleText": "C"
-			}
-		},
-		{
-			"path": "pages/D",
-			"style": {
-				"navigationBarTitleText": "D"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#3cc51f",
-		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
-		"list": [
-			{
-				"pagePath": "pages/A",
-				"text": "A页面"
-			},
-			{
-				"pagePath": "pages/B",
-				"text": "B页面"
-			},
-			{
-				"pagePath": "pages/C",
-				"text": "C页面"
-			}
-		]
-	}
+    "easycom": {
+        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+    },
+
+    "pages": [
+        {
+            "path": "src/pages/home",
+            "name": "home",
+            "style": {
+                "navigationBarTitleText": "首页"
+            }
+        },
+        {
+            "path": "src/pages/a",
+            "name": "a",
+            "style": {
+                "navigationBarTitleText": "页面A"
+            }
+        },
+        {
+            "path": "src/pages/b",
+            "style": {
+                "navigationBarTitleText": "页面B"
+            }
+        },
+        {
+            "path": "src/pages/c",
+            "style": {
+                "navigationBarTitleText": "页面C"
+            }
+        },
+        {
+            "path": "src/pages/d",
+            "style": {
+                "navigationBarTitleText": "页面D"
+            }
+        },
+
+        {
+            "path": "src/pages/null",
+            "name": "null"
+        }
+    ],
+
+    // "globalStyle": {
+    //     "navigationBarTextStyle": "black",
+    //     "navigationBarTitleText": "uni-app",
+    //     "navigationBarBackgroundColor": "#F8F8F8",
+    //     "backgroundColor": "#F8F8F8"
+    // },
+
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#f8f8f9",
+        "navigationStyle": "custom",
+        "transparentTitle": "always"
+    },
+
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "src/pages/a",
+                "text": "页面A",
+                "iconPath": "/static/icon.png",
+                "selectedIconPath": "/static/select-icon.png"
+            },
+            {
+                "pagePath": "src/pages/b",
+                "text": "页面B",
+                "iconPath": "/static/icon.png",
+                "selectedIconPath": "/static/select-icon.png"
+            },
+            {
+                "pagePath": "src/pages/c",
+                "text": "页面C",
+                "iconPath": "/static/icon.png",
+                "selectedIconPath": "/static/select-icon.png"
+            }
+        ]
+    }
 }
