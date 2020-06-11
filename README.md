@@ -119,6 +119,26 @@ uni.switchTab({ url: '/pages/a' });
 uni.navigateBack();
 ```
 
+## 取消对某个路由方法进行拦截
+
+例如对`uni.navigateTo`这个函数调用时取消路由拦截
+在
+
+```js
+uni.navigateTo(
+    {
+        url: '/pages/a',
+        success() {
+            console.log('is success');
+        },
+        fail() {
+            console.fail('is fail');
+        }
+    },
+    false
+);
+```
+
 ## 解析运行流程
 
 -   调用全局的`beforeEach`守卫
