@@ -132,7 +132,7 @@ uni.navigateTo(
             console.log('is success');
         },
         fail() {
-            console.fail('is fail');
+            console.error('is fail');
         }
     },
     false
