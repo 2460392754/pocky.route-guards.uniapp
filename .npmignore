@@ -1,6 +1,8 @@
 /pages
 /unpackage
 /uview-ui
+/src
+/static
 App.vue
 main.js
 manifest.json
