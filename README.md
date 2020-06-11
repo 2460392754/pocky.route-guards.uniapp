@@ -125,6 +125,26 @@ uni.navigateBack();
 -   路由跳转
 -   调用全局的`afterEach`守卫
 
+## 取消对某个路由方法进行拦截
+
+例如对`uni.navigateTo`这个函数调用时取消路由拦截
+在
+
+```js
+uni.navigateTo(
+    {
+        url: '/pages/a',
+        success() {
+            console.log('is success');
+        },
+        fail() {
+            console.error('is fail');
+        }
+    },
+    false
+);
+```
+
 ## 暂时不支持的操作
 
 ## 注意
