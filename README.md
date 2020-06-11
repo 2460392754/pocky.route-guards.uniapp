@@ -119,6 +119,26 @@ uni.switchTab({ url: '/pages/a' });
 uni.navigateBack();
 ```
 
+## 取消路由拦截
+
+不进入路由守卫
+
+```js
+// 例如
+uni.navigateTo(
+    {
+        url: '/pages/a',
+        success() {
+            console.log('is success');
+        },
+        fail() {
+            console.error('is fail');
+        }
+    },
+    false
+);
+```
+
 ## 解析运行流程
 
 -   调用全局的`beforeEach`守卫
