@@ -1,14 +1,14 @@
 # route-guards
 
 <p align="center">
-    <img alt="logo" src="./static/logo.png" width="120" height="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="https://github.com/2460392754/pocky.route-guards.uniapp/raw/master/static/logo.png" width="120" height="120" style="margin-bottom: 10px;">
 </p>
-<h3 align="center" style="margin: 30px 0 30px;font-weight: bold;font-size:40px;">路由守卫</h3>
+<h3 align="center" style="margin: 30px 0 30px; font-weight: bold; font-size:40px; ">路由守卫</h3>
 <h3 align="center">一个简单而又不失优雅的uniapp路由守卫</h3>
 
 ## 介绍
 
-在 `uniapp` 中模拟并实现对应`vue-router`的部分 Api 的功能
+在 `uniapp` 中模拟并实现对应 `vue-router` 的部分 Api 的功能
 
 ## 平台差异说明
 
@@ -108,20 +108,28 @@ guard.onError((errMsg) => {
 
 ## 如何跳转路由并触发注册的守卫
 
-路由跳转的使用方法和 [`uniapp`](https://uniapp.dcloud.net.cn/api/router?id=navigateto) 路由跳转一样的
+路由跳转的使用方法和 [ `uniapp` ](https://uniapp.dcloud.net.cn/api/router?id=navigateto) 路由跳转一样的
 
 ```js
 // 例如
-uni.navigateTo({ url: '/pages/a' });
-uni.redirectTo({ url: '/pages/a' });
-uni.reLaunch({ url: '/pages/a' });
-uni.switchTab({ url: '/pages/a' });
+uni.navigateTo({
+    url: '/pages/a'
+});
+uni.redirectTo({
+    url: '/pages/a'
+});
+uni.reLaunch({
+    url: '/pages/a'
+});
+uni.switchTab({
+    url: '/pages/a'
+});
 uni.navigateBack();
 ```
 
 ## 取消对某个路由方法进行拦截
 
-例如对`uni.navigateTo`这个函数调用时取消路由拦截
+例如对 `uni.navigateTo` 这个函数调用时取消路由拦截
 在
 
 ```js
@@ -141,29 +149,9 @@ uni.navigateTo(
 
 ## 解析运行流程
 
--   调用全局的`beforeEach`守卫
+-   调用全局的 `beforeEach` 守卫
 -   路由跳转
--   调用全局的`afterEach`守卫
-
-## 取消对某个路由方法进行拦截
-
-例如对`uni.navigateTo`这个函数调用时取消路由拦截
-在
-
-```js
-uni.navigateTo(
-    {
-        url: '/pages/a',
-        success() {
-            console.log('is success');
-        },
-        fail() {
-            console.error('is fail');
-        }
-    },
-    false
-);
-```
+-   调用全局的 `afterEach` 守卫
 
 ## 暂时不支持的操作
 
@@ -191,4 +179,4 @@ guard.beforeEach((to, from, next) => {
 
 ## 预览
 
-<img src="https://raw.githubusercontent.com/2460392754/pocky.route-guards.uniapp/master/static/qrcode.png" width="150">
+<img src="https://github.com/2460392754/pocky.route-guards.uniapp/raw/master/static/qrcode.png" width="150">
