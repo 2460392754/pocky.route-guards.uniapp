@@ -38,9 +38,9 @@ npm install uniapp-route-guards --save
 // main.js
 
 import Vue from 'vue';
-import UniRouteiGuards from 'uniapp-route-guards';
+import UniRouteGuards from 'uniapp-route-guards';
 
-Vue.use(UniRouteGuard);
+Vue.use(UniRouteGuards);
 ```
 
 ## 全局前置守卫
@@ -155,15 +155,20 @@ uni.navigateTo(
 
 ## 暂时不支持的操作
 
-暂不支持如下操作：
+1.在拦截器中访问 `vm`
 
 ```js
+// 例如:
 guard.beforeEach((to, from, next) => {
     next((vm) => {
         // 通过 `vm` 访问组件实例
     });
 });
 ```
+
+2.拦截原生的 `tabbar`
+
+3.拦截原生的 `navBar` 的 `back`
 
 ## Api
 
