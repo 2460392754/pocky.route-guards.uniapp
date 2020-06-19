@@ -8,3 +8,4 @@ main.js
 manifest.json
 pages.json
 .prettierrc.js
+yarn-error.log

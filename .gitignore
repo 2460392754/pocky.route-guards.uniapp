@@ -1,3 +1,4 @@
 /node_modules
 /unpackage/dist/dev
 *.zip
+yarn-error.log
