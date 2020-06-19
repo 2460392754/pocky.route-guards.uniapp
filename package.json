@@ -2,7 +2,7 @@
     "name": "pocky.route-guards.uniapp",
     "version": "1.0.3",
     "description": "一个简单而又不失优雅的uniapp路由守卫",
-    "main": "lib/index.js",
+    "main": "dist/index.js",
     "directories": {
         "lib": "lib"
     },
