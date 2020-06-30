@@ -48,7 +48,7 @@ Vue.use(UniRouteGuards);
 ```js
 // main.js
 
-const guard = new UniRouteiGuards();
+const guard = new UniRouteGuards();
 
 // 自定义路由拦截白名单
 const WHILE_LIST = ['/src/pages/home', '/src/pages/log'];
