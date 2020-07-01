@@ -9,3 +9,4 @@ manifest.json
 pages.json
 .prettierrc.js
 yarn-error.log
+*.zip
