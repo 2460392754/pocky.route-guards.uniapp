@@ -129,8 +129,7 @@ uni.navigateBack();
 
 ## 取消对某个路由方法进行拦截
 
-例如对 `uni.navigateTo` 这个函数调用时取消路由拦截
-在
+例如调用某个路由方法时并取消路由拦截
 
 ```js
 uni.navigateTo(
@@ -145,6 +144,9 @@ uni.navigateTo(
     },
     false
 );
+
+// 或
+uni.navigateBack(null, false);
 ```
 
 ## 解析运行流程

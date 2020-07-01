@@ -89,7 +89,7 @@ module.exports =
 /* 0 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"a\":\"1.0.3\"}");
+module.exports = JSON.parse("{\"a\":\"1.0.4\"}");
 
 /***/ }),
 /* 1 */
@@ -167,7 +167,7 @@ const hackUniRoute = function (callback) {
  * @param {string} action ['log'] 打印类型
  * @param {never}
  */
-const utils_print = function (msg, action = 'log') {
+const print = function (msg, action = 'log') {
     console[action]('[route-guards] ' + msg);
 };
 
@@ -351,7 +351,7 @@ const handleNextPipe = function (hookCb, hookOpts, iteratorNextHook) {
 class lib_uniRouteGuards {
     constructor() {
         // 打印当前插件版本号
-        utils_print('version: ' + package_0["a" /* version */]);
+        print('version: ' + package_0["a" /* version */]);
 
         // 初始化数据
         this.beforeHooks = [];

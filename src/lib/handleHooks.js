@@ -1,4 +1,4 @@
-import { isError, getCurStack } from './utils';
+import { isError, getCurStack, print } from './utils';
 
 /**
  * 处理 全局钩子队列
