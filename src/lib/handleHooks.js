@@ -20,7 +20,7 @@ export const handleGlobalHooksQueue = function (to, uniRunRoute) {
         handleNextPipe.bind(this),
         () => {
             uniRunRoute();
-            this.handleAfterHook.call(this, to, from);
+            handleAfterHook.call(this, to, from);
         },
         {
             to,
