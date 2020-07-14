@@ -10,3 +10,6 @@ pages.json
 .prettierrc.js
 yarn-error.log
 *.zip
+*.json
+*.scss
+*.log
