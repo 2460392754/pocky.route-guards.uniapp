@@ -2409,11 +2409,6 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uni-read-pages@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/uni-read-pages/-/uni-read-pages-1.0.5.tgz#452c8dcaa8977bbaef600909be926c8d9704387c"
-  integrity sha512-GkrrZ0LX0vn9R5k6RKEi0Ez3Q3e2vUpjXQ8Z6/K/d28KudI9ajqgt8WEjQFlG5EPm1K6uTArN8LlqmZTEixDUA==
-
 union-value@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/union-value/-/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847"
