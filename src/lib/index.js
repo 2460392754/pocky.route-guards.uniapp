@@ -1,14 +1,10 @@
-import { version } from '../../package.json';
 import { install } from './install';
 import { hackUniRoute } from './hackRoute';
 import { handleGlobalHooksQueue } from './handleHooks';
-import { print, registerHook } from './utils';
+import { registerHook } from './utils';
 
 export default class uniRouteGuards {
     constructor() {
-        // 打印当前插件版本号
-        print('version: ' + version);
-
         // 初始化数据
         this.beforeHooks = [];
         this.afterHooks = [];

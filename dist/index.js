@@ -82,24 +82,18 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = JSON.parse("{\"a\":\"1.0.4\"}");
+module.exports = __webpack_require__(1);
+
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(2);
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -108,9 +102,6 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "default", function() { return /* binding */ lib_uniRouteGuards; });
-
-// EXTERNAL MODULE: ./package.json
-var package_0 = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./src/lib/install.js
 /**
@@ -347,12 +338,8 @@ const handleNextPipe = function (hookCb, hookOpts, iteratorNextHook) {
 
 
 
-
 class lib_uniRouteGuards {
     constructor() {
-        // 打印当前插件版本号
-        print('version: ' + package_0["a" /* version */]);
-
         // 初始化数据
         this.beforeHooks = [];
         this.afterHooks = [];
